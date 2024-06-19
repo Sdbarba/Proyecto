@@ -5,3 +5,4 @@ FASTA (genes)
 3. Que quisieras hacer con tus datos
 Realizar una filogenia con IQTREE
 
+https://www.researchgate.net/profile/Jefferson-Prado/publication/326286644/figure/fig1/AS:672164801949698@1537267985566/Key-morphological-traits-for-Adiantum-leaves-A-B-All-species-of-Adiantum-share-a.ppm
