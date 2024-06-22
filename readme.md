@@ -8,7 +8,7 @@ La filogenia de los helechos del género Adiantum investiga las relaciones evolu
 
 La investigación en filogenia de Adiantum no solo es crucial para entender la evolución y la biodiversidad dentro de este género de helechos, sino que también tiene implicaciones para la conservación y la taxonomía, proporcionando una base sólida para la clasificación y el manejo de estas plantas en peligro de extinción y en entornos naturales y cultivados.
 
-<img src="Proyecto/Foto Adiantum.PNG" width="40%" alt="Adiantum">
+<img src="Foto Adiantum.PNG" width="40%" alt="Adiantum">
 
 
 
