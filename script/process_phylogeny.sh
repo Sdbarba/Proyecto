@@ -1,15 +1,17 @@
 #!/bin/bash
 
-# Se trabaja con el archivo de texto con datos FASTA
-TEXT_FILE="Adiantum.txt"
+# Usar una ruta relativa para acceder a adiantum.txt
+ruta_al_adiantum="../data/adiantum.txt"
 
-# Se Verifica que el archivo de texto existe
-if [ ! -f "$TEXT_FILE" ]; then
-  echo "El archivo $TEXT_FILE no existe."
-  exit 1
+# Verificar si el archivo adiantum.txt existe y luego hacer algo con él
+if [ -f "$ruta_al_adiantum" ]; then
+    echo "El archivo adiantum.txt existe en la ruta: $ruta_al_adiantum"
+    # Realizar acciones adicionales aquí
+else
+    echo "El archivo adiantum.txt no se encuentra en la ruta: $ruta_al_adiantum"
 fi
 
-# Se ingresa esta función para instalar IQ-TREE en el sistema
+# Función para instalar IQ-TREE en el sistema
 install_iqtree() {
   if ! command -v iqtree &> /dev/null; then
     echo "IQ-TREE no está instalado. Descargando IQ-TREE para Linux..."
@@ -21,7 +23,7 @@ install_iqtree() {
   fi
 }
 
-# Se ingresa esta función para instalar FigTree en el sistema
+# Función para instalar FigTree en el sistema
 install_figtree() {
   if ! command -v figtree &> /dev/null; then
     echo "FigTree no está instalado. Descargando FigTree para Linux..."
@@ -33,15 +35,15 @@ install_figtree() {
   fi
 }
 
-# Si no estan instalados IQ-TREE y FigTree se utiliza esta funcion
+# Instalar IQ-TREE y FigTree si no están instalados
 install_iqtree
 install_figtree
 
-# Se corre IQ-TREE con el archivo de texto existente
+# Correr IQ-TREE con el archivo de texto existente
 echo "Ejecutando IQ-TREE con $TEXT_FILE..."
 iqtree -s "$TEXT_FILE"
 
-# Se Verifica que IQ-TREE haya generado el archivo treefile
+# Verificar que IQ-TREE haya generado el archivo treefile
 TREE_FILE="${TEXT_FILE}.treefile"
 if [ ! -f "$TREE_FILE" ]; then
   echo "El archivo treefile no se generó correctamente."
@@ -50,8 +52,6 @@ fi
 
 echo "El archivo treefile se generó correctamente: $TREE_FILE"
 
-# Se Abre el archivo treefile con FigTree para obtener la filogenia
+# Abrir el archivo treefile con FigTree
 echo "Abriendo $TREE_FILE con FigTree..."
 ./figtree/FigTree "$TREE_FILE"
-# Se utiliza este comando para ejecutar el script : 
-<./process_phylogeny.sh>
