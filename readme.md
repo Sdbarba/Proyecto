@@ -57,17 +57,17 @@ En el caso que el script no pueda ejecutarse o los programas no se instale se pu
 
 [FigTree] (http://tree.bio.ed.ac.uk/download.php?id=90)
 
-[FigTree] (figtree.zip)
+[FigTree](figtree.zip)
 
 [IQTree] (https://github.com/iqtree/iqtree2/releases)
 
-[IQTree] (iqtree-2.1.2-Windows.zip)
+[IQTree](iqtree-2.1.2-Windows.zip)
 
 ### Filogenia Adiantum
 
 Si los scripts funcionaron correctamente deberia aparecer una imagen similar:
 
-<img src="result/Filogenia Adiantum"" width="40%">
+<img src="result/Foto Filogenia" width="40%">
 
 
 
