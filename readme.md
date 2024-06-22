@@ -8,10 +8,11 @@ La filogenia de los helechos del género Adiantum investiga las relaciones evolu
 
 La investigación en filogenia de Adiantum no solo es crucial para entender la evolución y la biodiversidad dentro de este género de helechos, sino que también tiene implicaciones para la conservación y la taxonomía, proporcionando una base sólida para la clasificación y el manejo de estas plantas en peligro de extinción y en entornos naturales y cultivados.
 
-<img src= "https://www.researchgate.net/profile/Jefferson-Prado/publication/326286644/figure/fig1/AS:672164801949698@1537267985566/Key-morphological-traits-for-Adiantum-leaves-A-B-All-species-of-Adiantum-share-a.ppm
-  " width="40%">
+![Adiantum](https://www.researchgate.net/profile/Jefferson-Prado/publication/326286644/figure/fig1/AS:672164801949698@1537267985566/Key-morphological-traits-for-Adiantum-leaves-A-B-All-species-of-Adiantum-share-a.ppm)
 
-*Image recueprada de Research Gate* </br> </br>
+
+
+*Imagen recuperada de Research Gate* </br> </br>
 
 #### Instrucciones
 
@@ -19,30 +20,30 @@ Estos scripts se pueden ejecutar individualmente en su computadora. En el caso q
 
 Indicaciones para descargar La filogenia del genero Adiantum
 
-# Primero se accede al NCBI en la categoria de GENES y se descarga en formato FASTA los genes que se van a trabajar para armar la filogenia
-# Si no son mucho y se descarga en formato de txt se puede modificar sin la necesidad de SUBLIME
-# Ya modificados y ubicados en DATA
-# Se descarga la Herramienta de IQTREE para crear la filogenia con el archivo.txt modificado ubicado en DATA
-# Accedemos a la ubicación iqtree2 y procesamos los datos del documento de texto “Adiantum.txt”
+ Primero se accede al NCBI en la categoria de GENES y se descarga en formato FASTA los genes que se van a trabajar para armar la filogenia
+ Si no son mucho y se descarga en formato de txt se puede modificar sin la necesidad de SUBLIME
+ Ya modificados y ubicados en DATA
+ Se descarga la Herramienta de IQTREE para crear la filogenia con el archivo.txt modificado ubicado en DATA
+ Accedemos a la ubicación iqtree2 y procesamos los datos del documento de texto “Adiantum.txt”
 $ <direccion de iqtree2.exe> -s Adiantum.txt -B 1000
-# Para crear la filogenia utilizamos el programa FigTree cargando el archivo “Adiantum.txt.treefile”
-# Descargamos la filogenia y la pegamos en resultados 
-# Por cada nuevo archivo que se subirá a GitHub se añade. $
+ Para crear la filogenia utilizamos el programa FigTree cargando el archivo “Adiantum.txt.treefile”
+ Descargamos la filogenia y la pegamos en resultados 
+ Por cada nuevo archivo que se subirá a GitHub se añade. $
 $ git add <nombre del archivo>
-# Si es un conjunto de archivo en una carpeta
+ Si es un conjunto de archivo en una carpeta
 $ git add .
-# Agregar los archivos al área de staging, se realiza un commit para guardar los cambios en el repositorio local:
+ Agregar los archivos al área de staging, se realiza un commit para guardar los cambios en el repositorio local:
 $ git commit -m "Nombre"
-# Para revisar los cambios o estado de los archivos 
+ Para revisar los cambios o estado de los archivos 
 $ git status
-# Para subir los cambios desde el equipo al repositorio en git hub 
+ Para subir los cambios desde el equipo al repositorio en git hub 
 $ git push origin main
-# FIN
+ FIN
 
 
 
 
-####process_phylogeny.sh
+#### process_phylogeny.sh
 Este es un script bash permite procesar el archivo de texto donde se ubica los datos formatos FASTA en las 2 aplicaciones para crear la filogenia. Primero se abrira la aplicacion de IQTREE para procesar los datos , seguido se procesara el archivo .treefile generado por IQTREE mediante la aplicacion de FIGTREE para construir la filogenia.
 
 ### Programas utilizados
@@ -67,9 +68,7 @@ En el caso que el script no pueda ejecutarse o los programas no se instale se pu
 Si los scripts funcionaron correctamente deberia aparecer una imagen similar:
 
 
-<img src="results/Filogenia Adiantum.png" alt="Filogenia Adiantum" width="40%">
-
-
+<img src="result/Filogenia Adiantum" alt="Filogenia Adiantum" width="40%">
 
 
 # PREGUNTAS 
