@@ -10,11 +10,9 @@ La investigación en filogenia de Adiantum no solo es crucial para entender la e
 
 <img src="Foto Adiantum.PNG" width="40%" alt="Adiantum">
 
-
-
 *Imagen recuperada de Research Gate* </br> </br>
 
-#### Instrucciones
+### Instrucciones
 
 Estos scripts se pueden ejecutar individualmente en su computadora. En el caso que los scripts automaticos no sirvan se aconseja correr de forma manual.
 
@@ -43,10 +41,10 @@ $ git push origin main
 
 
 
-#### process_phylogeny.sh
+### process_phylogeny.sh
 Este es un script bash permite procesar el archivo de texto donde se ubica los datos formatos FASTA en las 2 aplicaciones para crear la filogenia. Primero se abrira la aplicacion de IQTREE para procesar los datos , seguido se procesara el archivo .treefile generado por IQTREE mediante la aplicacion de FIGTREE para construir la filogenia.
 
-### Programas utilizados
+## Programas utilizados
 
 #### IQTREE
 IQ-TREE es un programa de software ampliamente utilizado para la inferencia de árboles filogenéticos a partir de datos moleculares. Su nombre proviene de "Iterative Quadratic Tree Estimation", reflejando su enfoque en métodos iterativos y eficientes para la estimación de árboles filogenéticos basados en criterios de máxima verosimilitud (ML), aunque también soporta otros métodos como la inferencia bayesiana.
@@ -54,7 +52,7 @@ IQ-TREE es un programa de software ampliamente utilizado para la inferencia de �
 #### FIGTREE
 FIGTREE es una herramienta de software diseñada específicamente para la visualización y exploración de árboles filogenéticos. Su nombre proviene de "Figurative Tree", lo que refleja su función principal de representar de manera gráfica y interactiva los árboles filogenéticos inferidos a partir de datos genéticos o moleculares.
 
-#### Instalacion manual
+### Instalacion manual
 En el caso que el script no pueda ejecutarse o los programas no se instale se puede realizar de manera manual siguien estos enlaces:
 
  [FigTree](http://tree.bio.ed.ac.uk/download.php?id=90)
@@ -63,15 +61,16 @@ En el caso que el script no pueda ejecutarse o los programas no se instale se pu
 [IQTree](https://github.com/iqtree/iqtree2/releases)
  [IQTree](iqtree-2.1.2-Windows.zip)
 
-#### Filogenia Adiantum
+### Filogenia Adiantum
 
 Si los scripts funcionaron correctamente deberia aparecer una imagen similar:
 
+<img src="result/Filogenia Adiantum"" width="40%" alt="Adiantum">
 
-<img src="result/Filogenia Adiantum" alt="Filogenia Adiantum" width="40%">
 
 
-# PREGUNTAS 
+
+## PREGUNTAS 
 1. Que tipo de datos ?
 Filogenias del gen rbcl en Helechos del género Adiantum
 2. En que formato estan tus datos
@@ -79,7 +78,7 @@ FASTA (genes)
 3. Que quisieras hacer con tus datos
 Realizar una filogenia con IQTREE
 
-#RECURSOS ADICIONALES
+# RECURSOS ADICIONALES
 
 4. IMAGEN: Morfología género Adiantum
 https://www.researchgate.net/profile/Jefferson-Prado/publication/326286644/figure/fig1/AS:672164801949698@1537267985566/Key-morphological-traits-for-Adiantum-leaves-A-B-All-species-of-Adiantum-share-a.ppm
