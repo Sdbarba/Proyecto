@@ -23,19 +23,19 @@ Indicaciones para descargar La filogenia del genero Adiantum
  Ya modificados y ubicados en DATA
 2. Se descarga la Herramienta de IQTREE para crear la filogenia con el archivo.txt modificado ubicado en DATA
 3. Accedemos a la ubicación iqtree2 y procesamos los datos del documento de texto “Adiantum.txt”
-$ <direccion de iqtree2.exe> -s Adiantum.txt -B 1000
+[$ <direccion de iqtree2.exe> -s Adiantum.txt -B 1000]
 4. Para crear la filogenia utilizamos el programa FigTree cargando el archivo “Adiantum.txt.treefile”
  Descargamos la filogenia y la pegamos en resultados 
-5. Por cada nuevo archivo que se subirá a GitHub se añade. $
-$ git add <nombre del archivo>
+5. Por cada nuevo archivo que se subirá a GitHub se añade.
+[$ git add <nombre del archivo>]
 6. Si es un conjunto de archivo en una carpeta
-$ git add .
+[$ git add .]
 7. Agregar los archivos al área de staging, se realiza un commit para guardar los cambios en el repositorio local:
-$ git commit -m "Nombre"
+[$ git commit -m "Nombre"]
 8. Para revisar los cambios o estado de los archivos 
-$ git status
+[$ git status]
 9. Para subir los cambios desde el equipo al repositorio en git hub 
-$ git push origin main
+[$ git push origin main]
 FIN
 
 
@@ -57,20 +57,13 @@ En el caso que el script no pueda ejecutarse o los programas no se instale se pu
 
 [FigTree] (http://tree.bio.ed.ac.uk/download.php?id=90)
 
-[FigTree](figtree.zip)
-
 [IQTree] (https://github.com/iqtree/iqtree2/releases)
-
-[IQTree](iqtree-2.1.2-Windows.zip)
 
 ### Filogenia Adiantum
 
 Si los scripts funcionaron correctamente deberia aparecer una imagen similar:
 
-<img src="result/Foto Filogenia" width="40%">
-
-
-
+<img src="result/Foto Filogenia.PNG" width="40%">
 
 ### PREGUNTAS 
 1. Que tipo de datos ?
