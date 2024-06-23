@@ -1,1 +1,1 @@
-Hola Mundo
+Para ejecutar el script de forma automatica se debe ejecutar el archivo "process_phylogeny" 

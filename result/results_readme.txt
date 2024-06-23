@@ -19,3 +19,6 @@ $ git status
 # Para subir los cambios desde el equipo al repositorio en git hub 
 $ git push origin main
 # FIN
+
+El archivo Adiantum Filogenia es el resultado en formato PDF solo se necesita arrastrar al navegador o hacer click 
+El archivo Foto Filogenia es el resultado en formato PNG solo se necesita arrastrar al navegador o hacer click 
